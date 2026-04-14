@@ -26,9 +26,8 @@ CREATE TABLE ProductDescription (
     Description TEXT,
     INDEX idx_country_id (CountryID),
     INDEX idx_product_id (ProductID),
-    PRIMARY KEY (ID),
-    FOREIGN KEY (CountryID) REFERENCES Countries(ID)
-) ENGINE=InnoDB;
+    PRIMARY KEY (ID)
+) ENGINE=MyISAM;
 
 -- Create a table for storing logs. For now we don't need to save them, but we need to implement functionality (Columns: ID, Time, LogRecord)
 CREATE TABLE Logs (
